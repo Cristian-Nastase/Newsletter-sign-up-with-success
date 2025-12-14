@@ -16,8 +16,8 @@ The website was done using only:
 
 ## Link to Website (hosted with GitHub Pages)
 
-- Solution URL: https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT
-- Live Site URL: https://cristian-nastase.github.io/FrontendMentor-Article-preview-component/
+- [Frontend Mentor Solution URL](https://www.frontendmentor.io/solutions/responsive-landing-page-using-vanilla-html-css-and-js-zxPrXFx9w9)
+- [Live Site URL - GitHub Pages](https://cristian-nastase.github.io/FrontendMentor-Article-preview-component/)
 
 
 ## Author

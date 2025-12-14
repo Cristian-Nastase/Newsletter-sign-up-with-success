@@ -23,8 +23,8 @@ function submit(e)
 {
     e.preventDefault();
 
-    let formData = new FormData(e.target);
-    let data = Object.fromEntries(formData);
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
 
     let validator = addressValidator(data.email);
 
@@ -57,7 +57,7 @@ function addressValidator(address)
 
         for(let i = 0; i < string.length; i++)
             {
-                if(string[i] == character)
+                if(string[i] === character)
                     {
                         if(index < 0)
                             {
@@ -120,7 +120,7 @@ function addressValidator(address)
     return (checkForLetters(subDomain) && checkForLetters(topDomain));
 }
 
-function dismiss(e)
+function dismiss()
 {
     successMessage.classList.toggle('hidden');
 }

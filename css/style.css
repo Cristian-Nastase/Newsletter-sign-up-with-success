@@ -25,7 +25,7 @@ section#sign-up-form
     background-color: var(--white);
 }
 
-#form-image-area
+figure#form-image-area
 {
     width: 100%;
     flex: 0 1 auto;
@@ -36,7 +36,7 @@ section#sign-up-form
     }
 }
 
-#form-content
+article#form-content
 {
     flex: 1 0 auto;
 
@@ -164,7 +164,7 @@ img#success-icon
 
 button#dismiss-button
 {
-    justify-self: flex;
+    justify-self: flex-end;
 }
 
 span#enter-email
@@ -221,7 +221,7 @@ input#email.error
         border-radius: 30px;
     }
 
-    #form-image-area
+    figure#form-image-area
     {   
         width: auto;
         flex: 1 0 auto;
@@ -239,7 +239,7 @@ input#email.error
         }
     }
 
-    #form-content
+    article#form-content
     {
         gap: var(--spacing-200);
         flex: 0 1 auto;
