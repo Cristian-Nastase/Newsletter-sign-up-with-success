@@ -57,6 +57,7 @@ body {
 
 .header-text
 {
+    color: var(--blue-700);
     font-size: var(--header-text);
     line-height: 110%;
     font-weight: 700;
@@ -64,6 +65,7 @@ body {
 
 .paragraph-text
 {
+    color: var(--blue-700);
     font-size: var(--paragraph-text);
     line-height: 140%;
     font-weight: 400;
@@ -71,6 +73,7 @@ body {
 
 .field-header
 {
+    color: var(--blue-700);
     font-size: var(--field-header-text);
     line-height: 110%;
     font-weight: 700;
