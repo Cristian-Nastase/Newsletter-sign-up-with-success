@@ -72,7 +72,7 @@ ul.content-list
 
     li::before 
     {
-        content: url(/assets/images/icon-list.svg);
+        content: url(./assets/images/icon-list.svg);
         padding-top: 1%;
     }
     
@@ -224,7 +224,7 @@ input#email.error
             height: 100%;
             object-fit: cover;
 
-            content: url(/assets/images/illustration-sign-up-desktop.svg);
+            content: url(./assets/images/illustration-sign-up-desktop.svg);
         }
     }
 
