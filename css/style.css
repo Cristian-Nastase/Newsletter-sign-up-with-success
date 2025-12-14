@@ -8,6 +8,7 @@
 
 body
 {
+    background-color: var(--blue-800);
     display: flex;
     flex-direction: column;
 
@@ -20,11 +21,19 @@ section#sign-up-form
 {
     display: flex;
     flex-direction: column;
+
+    background-color: var(--white);
 }
 
 #form-image-area
 {
+    width: 100%;
     flex: 0 1 auto;
+
+    img
+    {
+        width: 100%;
+    }
 }
 
 #form-content
@@ -72,7 +81,7 @@ ul.content-list
 
     li::before 
     {
-        content: url(./assets/images/icon-list.svg);
+        content: url(../assets/images/icon-list.svg);
         padding-top: 1%;
     }
     
@@ -134,6 +143,8 @@ section#success-message
     gap: var(--spacing-300);
 
     padding: var(--spacing-800) var(--spacing-300);
+
+    background-color: var(--white);
 }
 
 div#message-content
@@ -207,12 +218,12 @@ input#email.error
         width: 55rem;
         height: 35rem;
         flex-direction: row-reverse;
-        background-color: var(--white);
         border-radius: 30px;
     }
 
     #form-image-area
     {   
+        width: auto;
         flex: 1 0 auto;
         padding: var(--spacing-200);
 
@@ -224,7 +235,7 @@ input#email.error
             height: 100%;
             object-fit: cover;
 
-            content: url(./assets/images/illustration-sign-up-desktop.svg);
+            content: url(../assets/images/illustration-sign-up-desktop.svg);
         }
     }
 
@@ -246,8 +257,6 @@ input#email.error
         padding: var(--spacing-800);
 
         justify-content: center;
-
-        background-color: var(--white);
 
         gap: var(--spacing-400);
     }
