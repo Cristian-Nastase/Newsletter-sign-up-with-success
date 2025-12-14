@@ -1,0 +1,260 @@
+@import url(constants.css);
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+section#sign-up-form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#form-image-area
+{
+    flex: 0 1 auto;
+}
+
+#form-content
+{
+    flex: 1 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: var(--spacing-400) var(--spacing-300);
+    gap: var(--spacing-400);
+}
+
+#content-text
+{
+    display: flex;
+    flex-direction: column;
+    
+    gap: var(--spacing-300);
+}
+
+h1#content-header
+{
+    padding-bottom: var(--spacing-100);
+}
+
+ul.content-list
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 0;
+    list-style: none;
+    line-height: 150%;
+    gap: var(--spacing-100);
+
+    li
+    {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    li::before 
+    {
+        content: url(/assets/images/icon-list.svg);
+        padding-top: 1%;
+    }
+    
+    li p
+    {
+        padding-left: var(--spacing-200);
+    }
+}
+
+div#actual-form
+{
+    width: 100%;
+}
+
+#form
+{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-100);
+
+
+    label
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    input#email
+    {
+        padding: 1rem;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+
+        transition: box-shadow 0.2s, background-color 0.2s;
+    }
+
+    input#email:focus
+    {
+        outline: 0;
+        box-shadow: 
+        0px 0px 0px 2px var(--red);
+    }
+
+    button#submit-button
+    {
+        margin-top: var(--spacing-200);
+    }
+}
+
+section#success-message
+{
+    flex: 1 0 45rem;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    gap: var(--spacing-300);
+
+    padding: var(--spacing-800) var(--spacing-300);
+}
+
+div#message-content
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--spacing-300);
+
+    padding-top: var(--spacing-800);
+}
+
+img#success-icon
+{
+    width: 4rem;
+}
+
+button#dismiss-button
+{
+    justify-self: flex;
+}
+
+span#enter-email
+{
+    color: var(--blue-800);
+    font-weight: 700;
+}
+
+footer
+{
+    justify-self: end;
+    display: flex;
+    align-items: center;
+}
+
+.hidden
+{
+    display: none;
+    visibility: hidden;
+}
+
+#sign-up-form.hidden,
+#success-message.hidden {
+    display: none;
+}
+
+input#email.error
+{
+    outline: 1px solid red;
+    color: red;
+    background-color: hsla(4, 100%, 67%, 20%);
+}
+
+/* Desktop query */
+@media (min-width: 55rem) 
+{
+
+    body
+    {
+        background-color: var(--blue-700);
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    section#sign-up-form
+    {
+        width: 55rem;
+        height: 35rem;
+        flex-direction: row-reverse;
+        background-color: var(--white);
+        border-radius: 30px;
+    }
+
+    #form-image-area
+    {   
+        flex: 1 0 auto;
+        padding: var(--spacing-200);
+
+        border-radius: inherit;
+        img
+        {
+            border-radius: inherit;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            content: url(/assets/images/illustration-sign-up-desktop.svg);
+        }
+    }
+
+    #form-content
+    {
+        gap: var(--spacing-200);
+        flex: 0 1 auto;
+        padding: var(--spacing-800) var(--spacing-400);
+    }
+
+    section#success-message
+    {
+        flex: 0 1 auto;
+        width: 20rem;
+        height: 20rem;
+
+        border-radius: 30px;
+
+        padding: var(--spacing-800);
+
+        justify-content: center;
+
+        background-color: var(--white);
+
+        gap: var(--spacing-400);
+    }
+
+    div#message-content
+    {
+        padding: 0;
+        gap: var(--spacing-300);
+    }
+}

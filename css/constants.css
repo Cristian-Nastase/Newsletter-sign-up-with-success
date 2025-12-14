@@ -1,0 +1,130 @@
+:root
+{
+    /* Colors */
+    --red: hsl(4, 100%, 67%);
+    --blue-800: hsl(234, 29%, 20%);
+    --blue-700: hsl(235, 18%, 26%);
+    --grey: hsl(0, 0%,58%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Font sizes */
+    --field-header-text: 0.7rem;
+    --header-text: 2.5rem;
+    --paragraph-text: 1rem;
+    --button-text: 0.8rem;
+
+    /* Spacing */
+
+    --spacing-1400: 7rem;
+    --spacing-1000: 5rem;
+    --spacing-900: 4.5rem;
+    --spacing-800: 4rem;
+    --spacing-700: 3.5rem;
+    --spacing-500: 2.5rem;
+    --spacing-400: 2rem;
+    --spacing-300: 1.5rem;
+    --spacing-200: 1rem;
+    --spacing-100: .5rem;
+    --spacing-50: .25rem;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/roboto-regular-webfont.woff') format('woff');
+
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
+    url('/assets/fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+/* Classes */
+
+.header-text
+{
+    font-size: var(--header-text);
+    line-height: 110%;
+    font-weight: 700;
+}
+
+.paragraph-text
+{
+    font-size: var(--paragraph-text);
+    line-height: 140%;
+    font-weight: 400;
+}
+
+.field-header
+{
+    font-size: var(--field-header-text);
+    line-height: 110%;
+    font-weight: 700;
+}
+
+#error-message
+{
+    color: var(--red);
+    animation: error-appear 0.2s;
+}
+
+@keyframes error-appear 
+{
+    from
+    {
+        opacity: 0%;
+    }
+    
+    to
+    {
+        opacity: 100%;
+    }
+}
+
+.button-form
+{
+    color: var(--white);
+
+    border: 0;
+
+    padding: var(--spacing-200) var(--spacing-700);
+
+    border-radius: 10px;
+
+    background-color: var(--blue-800);
+
+    font-size: var(--button-text);
+    line-height: 150%;
+    font-weight: 700;
+
+    transition: box-shadow 0.2s;
+}
+
+.button-form:focus
+{
+    outline: 0;
+    box-shadow: 
+    0px 0px 0px 2px var(--red);
+}
+
+.button-form:hover
+{
+    background: linear-gradient(90deg, var(--red), orange);
+    box-shadow: 
+    2px 2px 10px 1px var(--red);
+}
+
