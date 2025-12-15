@@ -123,5 +123,5 @@ function addressValidator(address)
 function dismiss()
 {
     successMessage.classList.toggle('hidden');
-    signUpForm.classList.toggle("hidden");
+    signUpForm.classList.toggle('hidden');
 }
